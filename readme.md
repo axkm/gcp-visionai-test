@@ -2,11 +2,32 @@
 
 Tutorial used to make this project: https://cloud.google.com/vision/docs/quickstart-client-libraries
 
-## Navigating the Virtual Environment
+## Running This Project
 
-Entering: `$ source env/bin/activate`
+### Requirements
 
-Exiting: `$ deactivate`
+- Python 3 installed
+- [GCP Cloud Vision API enabled and a project owner service account key set as the GOOGLE_APPLICATION_CREDENTIALS environment variable](https://cloud.google.com/vision/docs/quickstart-client-libraries#before-you-begin)
+
+### Create and Enter the Virtual Environment
+
+`$ cd /project/directory/`
+
+`$ virtualenv --python python3 env`
+
+`$ source env/bin/activate`
+
+(the virtual environment can be exited using `$ deactivate`)
+
+### Install the dependencies
+
+`$ pip3 install -r requirements.txt`
+
+### Running the project
+
+`$ python3 quickstart.py`
+
+The response should be a list of 10 elements detected from the cat cafe photo found in the resources folder.
 
 ## Output for each image
 

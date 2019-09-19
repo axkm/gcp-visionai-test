@@ -1,3 +1,5 @@
+# copied from https://cloud.google.com/vision/docs/quickstart-client-libraries#using_the_client_library
+
 import io
 import os
 
